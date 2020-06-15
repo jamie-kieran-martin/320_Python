@@ -1,47 +1,5 @@
-'''
-
-Dynamic Programming prac sheet solution
-
-The aim of this prac was to compare different implementations
-of the Levenshtein edit distance.
-
-Created on Sun Oct  14 2018
-Modified on Thu 18 2018
-- fixed display of DP table
-Modified  2019 Sept
-- Added comments
-- Fixed formatting bug in 'fill_lev_table'
-- Added reference to functools.lru_cache
-
-@author: f.maire@qut.edu.au
-
-'''
-
-import timeit
 import numpy as np
 
-
-# ----------------------------------------------------------------------------
-
-def memoize(fn):
-    """
-    Memoize function fn.
-    Return a function that caches the computed values.
-    """
-
-    def memoized_fn(*args):
-        # print args
-        if not args in memoized_fn.cache:
-            memoized_fn.cache[args] = fn(*args)
-        ##        else:
-        ##            print( 'new ' ,args)
-        return memoized_fn.cache[args]
-
-    memoized_fn.cache = {}
-    return memoized_fn
-
-
-# ----------------------------------------------------------------------------
 
 def lev(a,
         b,
@@ -59,18 +17,11 @@ def lev(a,
         delete_cost : deletion cost function ,
         match_cost : match cost function
     '''
-    # Python trick:
-    # the test
-    #   if len(some_string)==0:
-    # can be replaced with
-    #   if some_string:
 
-    #    print ('debug lev >> a = {} , b = {}  '.format(a,b))
-
-    if len(a) == 0:
+    if a:
         # cost of inserting all elements of sequence b
         return sum([insert_cost(y) for y in b])
-    if len(b) == 0:
+    if b:
         # cost of deleting all elements of sequence a
         return sum([delete_cost(x) for x in a])
 
@@ -82,58 +33,6 @@ def lev(a,
     )
 
 
-# ----------------------------------------------------------------------------
-
-# Memoize the function 'lev'
-memoized_lev = memoize(lev)
-
-
-#    We could implement meomoization with lru_cache from functools
-#
-#    from functools import lru_cache
-#    memoized_lev = lru_cache(maxsize=1024)(lev)
-#
-#    We can also use the decorator notation
-#
-#    lru_cache(maxsize=1024)
-#    def lev(a,
-#            b,
-#            insert_cost = lambda x:1 ,
-#            delete_cost = lambda x:2 ,
-#            match_cost = lambda x,y: 0 if x==y else 4):
-#
-
-
-# ----------------------------------------------------------------------------
-
-def fill_lev_table(a, b):
-    '''
-    Compute and display the Levenshtein edit distance table between
-    sequence 'a' and sequence 'b'
-    @param
-        a :  sequence
-        b :  sequence
-    '''
-    # cache the results
-    levm = memoize(lev)
-
-    # print head row (word b)
-    print('\t' * 2, end='')
-    print(*(c for c in b), sep='\t')
-    print('')
-
-    print('\t' * 2, end='')
-    print(*(levm('', b[:j + 1]) for j in range(len(b))), sep='\t')
-    print('')
-    for i in range(len(a)):
-        print(a[i], '\t', levm(a[:i + 1], ''), end='\t')
-        for j in range(len(b)):
-            print(levm(a[:i + 1], b[:j + 1]), end='\t')
-        print('\n')
-
-    # ----------------------------------------------------------------------------
-
-
 # edit operation codes
 dict_op = {0: 'match', 1: 'insert', 2: 'delete',
            'match': 0, 'insert': 1, 'delete': 2}
@@ -141,7 +40,6 @@ dict_op = {0: 'match', 1: 'insert', 2: 'delete',
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-# Exercise 3
 def dynprog(x,
             y,
             insert_cost=lambda c: 1,
@@ -175,11 +73,6 @@ def dynprog(x,
         P is the parent array to trace back the edit sequence
         P is used by the function 'explain_seq'
     '''
-
-    #    x[0],...,x[nx-1]
-    #    y[0],...,y[ny-1]
-    #
-    #    M : cost matrix
 
     nx = len(x)
     ny = len(y)
@@ -215,7 +108,6 @@ def dynprog(x,
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-# Exercise 3
 def explain_dynprog(x, y, M, P):
     '''
     Retrieve the optimal sequence of edit operations given
@@ -293,4 +185,3 @@ if __name__ == "__main__":
     L = explain_dynprog(w1, w2, M, P)
     print(L)
     print(levenshtein(w1, w2))
-
