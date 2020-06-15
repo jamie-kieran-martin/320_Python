@@ -1,21 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="24566470-8b13-41ff-8816-d971bf3fb64f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/320_Python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/320_Python.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lev.py" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/q_learning.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/information_gain.py" beforeDir="false" afterPath="$PROJECT_DIR$/information_gain.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1dLvJIRx490F6fIxg6GH6BoKm5j" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -28,7 +55,7 @@
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
   </component>
-  <component name="RunManager" selected="Python.levenshtein">
+  <component name="RunManager" selected="Python.information_gain">
     <configuration name="information_gain" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="320_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -75,8 +102,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.levenshtein" />
         <item itemvalue="Python.information_gain" />
+        <item itemvalue="Python.levenshtein" />
       </list>
     </recent_temporary>
   </component>
@@ -91,33 +118,44 @@
       <option name="presentableId" value="Default" />
       <updated>1592217114212</updated>
       <workItem from="1592217116922" duration="4000" />
-      <workItem from="1592217372039" duration="1075000" />
+      <workItem from="1592217372039" duration="2289000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1664" height="227" key="GridCell.Tab.0.bottom" timestamp="1592218442383">
+    <state width="809" height="227" key="GridCell.Tab.0.bottom" timestamp="1592219787521">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1664" height="227" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1592218442383" />
-    <state width="1664" height="227" key="GridCell.Tab.0.center" timestamp="1592218442383">
+    <state width="809" height="227" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1592219787521" />
+    <state width="809" height="227" key="GridCell.Tab.0.center" timestamp="1592219787521">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1664" height="227" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1592218442383" />
-    <state width="1664" height="227" key="GridCell.Tab.0.left" timestamp="1592218442382">
+    <state width="809" height="227" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1592219787521" />
+    <state width="809" height="227" key="GridCell.Tab.0.left" timestamp="1592219787521">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1664" height="227" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1592218442382" />
-    <state width="1664" height="227" key="GridCell.Tab.0.right" timestamp="1592218442383">
+    <state width="809" height="227" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1592219787521" />
+    <state width="809" height="227" key="GridCell.Tab.0.right" timestamp="1592219787521">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1664" height="227" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1592218442383" />
+    <state width="809" height="227" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1592219787521" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/320_Python$levenshtein.coverage" NAME="levenshtein Coverage Results" MODIFIED="1592218442372" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/320_Python$information_gain.coverage" NAME="information_gain Coverage Results" MODIFIED="1592217883139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/320_Python$information_gain.coverage" NAME="information_gain Coverage Results" MODIFIED="1592219787512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
