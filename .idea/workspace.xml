@@ -20,9 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="24566470-8b13-41ff-8816-d971bf3fb64f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/q_learning.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/information_gain.py" beforeDir="false" afterPath="$PROJECT_DIR$/information_gain.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +54,7 @@
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
   </component>
-  <component name="RunManager" selected="Python.information_gain">
+  <component name="RunManager" selected="Python.q_learning">
     <configuration name="information_gain" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="320_Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -100,8 +99,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="q_learning" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="320_Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/q_learning.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.q_learning" />
         <item itemvalue="Python.information_gain" />
         <item itemvalue="Python.levenshtein" />
       </list>
@@ -118,7 +140,8 @@
       <option name="presentableId" value="Default" />
       <updated>1592217114212</updated>
       <workItem from="1592217116922" duration="4000" />
-      <workItem from="1592217372039" duration="2289000" />
+      <workItem from="1592217372039" duration="2307000" />
+      <workItem from="1592304001506" duration="487000" />
     </task>
     <servers />
   </component>
@@ -135,26 +158,32 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="809" height="227" key="GridCell.Tab.0.bottom" timestamp="1592219787521">
-      <screen x="0" y="0" width="1707" height="920" />
+    <state width="914" height="264" key="GridCell.Tab.0.bottom" timestamp="1592304487606">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="809" height="227" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1592219787521" />
-    <state width="809" height="227" key="GridCell.Tab.0.center" timestamp="1592219787521">
-      <screen x="0" y="0" width="1707" height="920" />
+    <state width="914" height="264" key="GridCell.Tab.0.bottom/-3840.0.1707.942/0.0.1920.1040@0.0.1920.1040" timestamp="1592304487606" />
+    <state width="809" height="227" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1592219846624" />
+    <state width="914" height="264" key="GridCell.Tab.0.center" timestamp="1592304487606">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="809" height="227" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1592219787521" />
-    <state width="809" height="227" key="GridCell.Tab.0.left" timestamp="1592219787521">
-      <screen x="0" y="0" width="1707" height="920" />
+    <state width="914" height="264" key="GridCell.Tab.0.center/-3840.0.1707.942/0.0.1920.1040@0.0.1920.1040" timestamp="1592304487606" />
+    <state width="809" height="227" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1592219846623" />
+    <state width="914" height="264" key="GridCell.Tab.0.left" timestamp="1592304487606">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="809" height="227" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1592219787521" />
-    <state width="809" height="227" key="GridCell.Tab.0.right" timestamp="1592219787521">
-      <screen x="0" y="0" width="1707" height="920" />
+    <state width="914" height="264" key="GridCell.Tab.0.left/-3840.0.1707.942/0.0.1920.1040@0.0.1920.1040" timestamp="1592304487606" />
+    <state width="809" height="227" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1592219846623" />
+    <state width="914" height="264" key="GridCell.Tab.0.right" timestamp="1592304487606">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="809" height="227" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1592219787521" />
+    <state width="914" height="264" key="GridCell.Tab.0.right/-3840.0.1707.942/0.0.1920.1040@0.0.1920.1040" timestamp="1592304487606" />
+    <state width="809" height="227" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1592219846623" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/320_Python$q_learning.coverage" NAME="q_learning Coverage Results" MODIFIED="1592304483207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/320_Python$levenshtein.coverage" NAME="levenshtein Coverage Results" MODIFIED="1592218442372" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/320_Python$information_gain.coverage" NAME="information_gain Coverage Results" MODIFIED="1592219787512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
